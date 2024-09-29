@@ -16,12 +16,10 @@
 
 ## Dice
 
-- **Link GitHub**: [Proyek Dice](https://github.com/londonappbrewery/dicee-flutter)
 - Terdapat perbedaan penggunaan tombol. Untuk dokumentasinya, lihat di: [Tombol Flutter](https://docs.flutter.dev/release/breaking-changes/buttons)
 
 ## Xylophone
 
-- **Link GitHub**: [Proyek Xylophone](https://github.com/londonappbrewery/xylophone-flutter)
 - Kita menggunakan library `just_audio` bukan `audioplayers`.
 - Penggunaannya kurang lebih sama dengan `audio_cache` yang digunakan dalam tutorial, mungkin ada sedikit perbedaan.
 - Untuk dokumentasi `just_audio`, lihat di: [Paket just_audio](https://pub.dev/packages/just_audio)
@@ -30,7 +28,6 @@
 
 ## Quizzler
 
-- **Link GitHub**: [Proyek Quizzler](https://github.com/londonappbrewery/quizzler-flutter)
 - `FlatButton` digantikan dengan `TextButton`. Lihat dokumentasi: [Tombol Flutter](https://docs.flutter.dev/release/breaking-changes/buttons)
 - Perubahan di `question.dart`:
   - Sekarang menggunakan constructor initializer list untuk menginisialisasi properti:
@@ -60,13 +57,11 @@ class Question {
 
 ## Destini
 
-- **Link GitHub**: [Proyek Destini](https://github.com/londonappbrewery/destini-challenge-starting)
 - `FlatButton` digantikan dengan `TextButton`. Lihat dokumentasi: [Tombol Flutter](https://docs.flutter.dev/release/breaking-changes/buttons)
 - `story.dart` membutuhkan kata kunci `required` untuk setiap parameter.
 
 ## BMI Calculator
 
-- **Link GitHub**: [Proyek Kalkulator BMI](https://github.com/londonappbrewery/bmi-calculator-flutter)
 - Parameter membutuhkan kata kunci `required` (tanpa `@` di awal).
 - Di `calculator_brain.dart`, tambahkan `late` ke variabel `double _bmi`:
   ```dart
@@ -84,7 +79,6 @@ class Question {
 
 ## Clima Weather
 
-- **Link GitHub**: [Proyek Clima](https://github.com/londonappbrewery/Clima-Flutter)
 - Di `networking.dart`, ubah penggunaan URL:
   ```dart
   http.Response response = await http.get(Uri.parse(url));
@@ -113,7 +107,6 @@ class Question {
 
 ## Bitcoin Ticker
 
-- **Link GitHub**: [Proyek Bitcoin Ticker](https://github.com/londonappbrewery/bitcoin-ticker-flutter)
 - Gunakan `Uri.parse()` untuk membuat objek Uri dari `requestURL`:
   ```dart
   http.Response response = await http.get(Uri.parse(requestURL));
@@ -136,7 +129,6 @@ class Question {
 
 ## Todo List
 
-- **Link GitHub**: [Proyek Todoey](https://github.com/londonappbrewery/todoey-flutter)
 - Tambahkan `required` ke fungsi `TaskTile` di `task_tile.dart`.
 - Perbarui variabel callback di `task_tile.dart`:
   ```dart
