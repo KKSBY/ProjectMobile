@@ -3,16 +3,16 @@
 ## Daftar Isi
 1. **Project Link** : [i_am_rich](https://github.com/KKSBY/i_am_rich) 
 2. **Project Link** : [Name Card](https://github.com/KKSBY/NameCard)
-3. ** Notes ** : [Dice](#dice) || **Project Link** : [Dice](https://github.com/KKSBY/Dice)
-4. ** Notes ** : [Magic8Ball] || **Project Link** : [Magic8Ball](https://github.com/KKSBY/Magic8Ball)
-5. ** Notes ** : [Xylophone](#xylophone) || **Project Link** : [Xylophone](https://github.com/KKSBY/xylophone)
-6. ** Notes ** : [Quizzler](#quizzler) ||  **Project Link** : [Quizzler](https://github.com/KKSBY/Quizzler)
-7. ** Notes ** : [Destini](#destini) ||  **Project Link** : [Destini](https://github.com/KKSBY/destini)
-8. ** Notes ** : [BMI Calculator](#bmi-calculator) ||  **Project Link** : [BMI Calculator](https://github.com/KKSBY/mbi_Calculator)
-9. ** Notes ** : [Clima Weather](#clima-weather) ||  **Project Link** : [Clima Weather](https://github.com/KKSBY/ClimaWeather)
-10. ** Notes ** : [Bitcoin Ticker](#bitcoin-ticker) ||  **Project Link** : [Bitcoin Ticker](https://github.com/KKSBY/Bitcoin_Ticker)
-11. ** Notes ** : [Flash-Chat](#Flash-Chat) || **Project Link** : [Flash-Chat](https://github.com/KKSBY/Flash-Chat)
-12. ** Notes ** : [Todo List](#todo-list) || **Project Link** : [Todo List](https://github.com/KKSBY/ToDoList)
+3. **Notes** : [Dice](#dice) || **Project Link** : [Dice](https://github.com/KKSBY/Dice)
+4. **Notes** : [Magic8Ball] || **Project Link** : [Magic8Ball](https://github.com/KKSBY/Magic8Ball)
+5. **Notes** : [Xylophone](#xylophone) || **Project Link** : [Xylophone](https://github.com/KKSBY/xylophone)
+6. **Notes** : [Quizzler](#quizzler) ||  **Project Link** : [Quizzler](https://github.com/KKSBY/Quizzler)
+7. **Notes** : [Destini](#destini) ||  **Project Link** : [Destini](https://github.com/KKSBY/destini)
+8. **Notes** : [BMI Calculator](#bmi-calculator) ||  **Project Link** : [BMI Calculator](https://github.com/KKSBY/mbi_Calculator)
+9. **Notes** : [Clima Weather](#clima-weather) ||  **Project Link** : [Clima Weather](https://github.com/KKSBY/ClimaWeather)
+10. **Notes** : [Bitcoin Ticker](#bitcoin-ticker) ||  **Project Link** : [Bitcoin Ticker](https://github.com/KKSBY/Bitcoin_Ticker)
+11. **Notes** : [Flash-Chat](#Flash-Chat) || **Project Link** : [Flash-Chat](https://github.com/KKSBY/Flash-Chat)
+12. **Notes** : [Todo List](#todo-list) || **Project Link** : [Todo List](https://github.com/KKSBY/ToDoList)
 
 ## Dice
 
