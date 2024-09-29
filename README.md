@@ -64,7 +64,7 @@ class Question {
 - `FlatButton` digantikan dengan `TextButton`. Lihat dokumentasi: [Tombol Flutter](https://docs.flutter.dev/release/breaking-changes/buttons)
 - `story.dart` membutuhkan kata kunci `required` untuk setiap parameter.
 
-## Kalkulator BMI
+## BMI Calculator
 
 - **Link GitHub**: [Proyek Kalkulator BMI](https://github.com/londonappbrewery/bmi-calculator-flutter)
 - Parameter membutuhkan kata kunci `required` (tanpa `@` di awal).
@@ -134,7 +134,7 @@ class Question {
     ```
   - Tambahkan `required` ke parameter `CryptoCard`.
 
-## Daftar Tugas
+## Todo List
 
 - **Link GitHub**: [Proyek Todoey](https://github.com/londonappbrewery/todoey-flutter)
 - Tambahkan `required` ke fungsi `TaskTile` di `task_tile.dart`.
