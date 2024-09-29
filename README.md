@@ -107,7 +107,7 @@ class Question {
 
 ## Bitcoin Ticker
 
-- Gunakan `Uri.parse()` untuk membuat objek Uri dari `requestURL`:
+- Di `coin_data.dart` gunakan `Uri.parse()` untuk membuat objek Uri dari `requestURL`:
   ```dart
   http.Response response = await http.get(Uri.parse(requestURL));
   ```
