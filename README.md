@@ -3,16 +3,16 @@
 ## Daftar Isi
 1. **Project Link** : [i_am_rich](https://github.com/KKSBY/i_am_rich) 
 2. **Project Link** : [Name Card](https://github.com/KKSBY/NameCard)
-3. Notes : [Dice](#dice) || **Project Link** : [Dice](https://github.com/KKSBY/Dice)
-4. Notes : [Magic8Ball] || **Project Link** : [Magic8Ball](https://github.com/KKSBY/Magic8Ball)
-5. Notes : [Xylophone](#xylophone) || **Project Link** : [Xylophone](https://github.com/KKSBY/xylophone)
-6. Notes : [Quizzler](#quizzler) ||  **Project Link** : [Quizzler](https://github.com/KKSBY/Quizzler)
-7. Notes : [Destini](#destini) ||  **Project Link** : [Destini](https://github.com/KKSBY/destini)
-8. Notes : [BMI Calculator](#bmi-calculator) ||  **Project Link** : [BMI Calculator](https://github.com/KKSBY/mbi_Calculator)
-9. Notes : [Clima Weather](#clima-weather) ||  **Project Link** : [Clima Weather](https://github.com/KKSBY/ClimaWeather)
-10. Notes : [Bitcoin Ticker](#bitcoin-ticker) ||  **Project Link** : [Bitcoin Ticker](https://github.com/KKSBY/Bitcoin_Ticker)
-11. **Project Link** : [Flash-Chat](https://github.com/KKSBY/Flash-Chat)
-12. Notes : [Todo List](#todo-list) || **Project Link** : [Todo List](https://github.com/KKSBY/ToDoList)
+3. ** Notes ** : [Dice](#dice) || **Project Link** : [Dice](https://github.com/KKSBY/Dice)
+4. ** Notes ** : [Magic8Ball] || **Project Link** : [Magic8Ball](https://github.com/KKSBY/Magic8Ball)
+5. ** Notes ** : [Xylophone](#xylophone) || **Project Link** : [Xylophone](https://github.com/KKSBY/xylophone)
+6. ** Notes ** : [Quizzler](#quizzler) ||  **Project Link** : [Quizzler](https://github.com/KKSBY/Quizzler)
+7. ** Notes ** : [Destini](#destini) ||  **Project Link** : [Destini](https://github.com/KKSBY/destini)
+8. ** Notes ** : [BMI Calculator](#bmi-calculator) ||  **Project Link** : [BMI Calculator](https://github.com/KKSBY/mbi_Calculator)
+9. ** Notes ** : [Clima Weather](#clima-weather) ||  **Project Link** : [Clima Weather](https://github.com/KKSBY/ClimaWeather)
+10. ** Notes ** : [Bitcoin Ticker](#bitcoin-ticker) ||  **Project Link** : [Bitcoin Ticker](https://github.com/KKSBY/Bitcoin_Ticker)
+11. ** Notes ** : [Flash-Chat](#Flash-Chat) || **Project Link** : [Flash-Chat](https://github.com/KKSBY/Flash-Chat)
+12. ** Notes ** : [Todo List](#todo-list) || **Project Link** : [Todo List](https://github.com/KKSBY/ToDoList)
 
 ## Dice
 
@@ -24,13 +24,13 @@
 - Penggunaannya kurang lebih sama dengan `audio_cache` yang digunakan dalam tutorial, mungkin ada sedikit perbedaan.
 - Untuk dokumentasi `just_audio`, lihat di: [Paket just_audio](https://pub.dev/packages/just_audio)
 - `FlatButton` digantikan dengan `TextButton`. Lihat dokumentasi: [Tombol Flutter](https://docs.flutter.dev/release/breaking-changes/buttons)
-- Fungsi sekarang membutuhkan kata kunci `required` untuk setiap parameter.
+- Constructor membutuhkan kata kunci `required` untuk setiap parameter.
 
 ## Quizzler
 
 - `FlatButton` digantikan dengan `TextButton`. Lihat dokumentasi: [Tombol Flutter](https://docs.flutter.dev/release/breaking-changes/buttons)
 - Perubahan di `question.dart`:
-  - Sekarang menggunakan constructor initializer list untuk menginisialisasi properti:
+  - menggunakan Constructor initializer list untuk menginisialisasi properti, seperti contoh dibawah:
 
 ```dart
 // Sebelum:
@@ -97,7 +97,7 @@ class Question {
   - Tambahkan `!` untuk memastikan nilai tidak null jika diperlukan.
   - Perbaiki kesalahan penulisan tombol.
 - Jika terjadi kesalahan akses lokasi:
-  - Ubah API di `services/weather.dart`. Buat kunci API baru di [OpenWeatherMap](https://home.openweathermap.org/api_keys)
+  - Ubah API di `services/weather.dart`. Buat API baru di [OpenWeatherMap](https://home.openweathermap.org/api_keys)
   - Periksa izin lokasi di `android/app/main/AndroidManifest.xml`:
     ```xml
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
@@ -126,6 +126,33 @@ class Question {
     value: isWaiting ? '?' : (coinValues[crypto] ?? 'N/A')
     ```
   - Tambahkan `required` ke parameter `CryptoCard`.
+
+## Flash-Chat
+- Kita menggunakan modal_progress_hud_nsn bukan modal_progress_hud, **Link Documentation** :[modal_progress_hud_nsn](https://pub.dev/packages/modal_progress_hud_nsn)
+- Di `welcome_screen.dart` late di variable AnimationConroller dan Animation
+- Di `registration_scree.dart` dan `login_screen.dart` ada penambahan late di variable email dan password
+- Di `chat_screen.dart` ada beberapa perubahan seperti :
+  - mengubah `Firescroe.instance` menjadi `FirebaseFirestore.instance`
+  - mengganti `FirebaseUser` dengan `User`
+  - Mengubah `_auth.currentUser()` menjadi `_auth.currentUser`
+  - Mengubah `snapshot.data.documents` menjadi `snapshot.data!.docs`
+  - mengubah akses data dokumen dari `message.data['text']` menjadi `message['text']`
+  - menambahkan anotasi null safety ke variable yang sesuai, beberapa variable memerlukan anotasi nullable taua non-nullable.
+  - menambahkan `required` ke parameter konstruktor `MessageBubble`
+  - mengganti `FlatButton` menjadi `TextButton`
+- jika terdapat error `Another exception was thrown: [core/no-app] No Firebase App '[DEFAULT]' has been created - call Firebase.initializeApp()` Ketika menjalankan aplikasinya tambahkan ubahlan main function nya seperti berikut :
+  ```dart
+    void main() async {
+      WidgetsFlutterBinding.ensureInitialized();
+      await Firebase.initializeApp(
+          options: FirebaseOptions(
+              apiKey: 'API-KEY',
+              appId: 'API-ID',
+              messagingSenderId: 'Sender-ID',
+              projectId: 'Project ID'));
+      runApp(FlashChat());
+    }
+    ```
 
 ## Todo List
 
