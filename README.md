@@ -1,37 +1,42 @@
-# Flutter Projects Guide
+# Mobile Development Flutter
 
-This README provides information about various Flutter projects and common issues encountered during development.
-
-## Table of Contents
-1. [Dice](#dice)
-2. [Xylophone](#xylophone)
-3. [Quizzler](#quizzler)
-4. [Destini](#destini)
-5. [BMI Calculator](#bmi-calculator)
-6. [Clima Weather](#clima-weather)
-7. [Bitcoin Ticker](#bitcoin-ticker)
-8. [Todo List](#todo-list)
+## Daftar Isi
+1. [I Am Rich] || **Project Link** : [i_am_rich](https://github.com/KKSBY/i_am_rich) 
+2. [Name Card] || **Project Link** : [Name Card](https://github.com/KKSBY/NameCard)
+3. [Dice](#dice) || **Project Link** : [Dice](https://github.com/KKSBY/Dice)
+4. [Magic8Ball] || **Project Link** : [Magic8Ball](https://github.com/KKSBY/Magic8Ball)
+5. [Xylophone](#xylophone) || **Project Link** : [Xylophone](https://github.com/KKSBY/xylophone)
+6. [Quizzler](#quizzler) ||  **Project Link** : [Quizzler](https://github.com/KKSBY/Quizzler)
+7. [Destini](#destini) ||  **Project Link** : [Destini](https://github.com/KKSBY/destini)
+8. [BMI Calculator](#bmi-calculator) ||  **Project Link** : [BMI Calculator](https://github.com/KKSBY/mbi_Calculator)
+9. [Clima Weather](#clima-weather) ||  **Project Link** : [Clima Weather](https://github.com/KKSBY/ClimaWeather)
+10. [Bitcoin Ticker](#bitcoin-ticker) ||  **Project Link** : [Bitcoin Ticker](https://github.com/KKSBY/Bitcoin_Ticker)
+11. [Flash-Chat] || **Project Link** : [Flash-Chat](https://github.com/KKSBY/Flash-Chat)
+12. [Todo List](#todo-list) || **Project Link** : [Todo List](https://github.com/KKSBY/ToDoList)
 
 ## Dice
 
-- There are differences in button usage. For documentation, refer to: [Flutter Buttons](https://docs.flutter.dev/release/breaking-changes/buttons)
+- **Link GitHub**: [Proyek Dice](https://github.com/londonappbrewery/dicee-flutter)
+- Terdapat perbedaan penggunaan tombol. Untuk dokumentasinya, lihat di: [Tombol Flutter](https://docs.flutter.dev/release/breaking-changes/buttons)
 
 ## Xylophone
 
-- We use the `just_audio` library instead of `audioplayers`.
-- Usage is similar to `audio_cache` used in the tutorial, with slight differences.
-- For `just_audio` documentation, visit: [just_audio package](https://pub.dev/packages/just_audio)
-- `FlatButton` is replaced with `TextButton`. See documentation: [Flutter Buttons](https://docs.flutter.dev/release/breaking-changes/buttons)
-- Functions now require the `required` keyword for each parameter.
+- **Link GitHub**: [Proyek Xylophone](https://github.com/londonappbrewery/xylophone-flutter)
+- Kita menggunakan library `just_audio` bukan `audioplayers`.
+- Penggunaannya kurang lebih sama dengan `audio_cache` yang digunakan dalam tutorial, mungkin ada sedikit perbedaan.
+- Untuk dokumentasi `just_audio`, lihat di: [Paket just_audio](https://pub.dev/packages/just_audio)
+- `FlatButton` digantikan dengan `TextButton`. Lihat dokumentasi: [Tombol Flutter](https://docs.flutter.dev/release/breaking-changes/buttons)
+- Fungsi sekarang membutuhkan kata kunci `required` untuk setiap parameter.
 
 ## Quizzler
 
-- `FlatButton` is replaced with `TextButton`. See documentation: [Flutter Buttons](https://docs.flutter.dev/release/breaking-changes/buttons)
-- Changes in `question.dart`:
-  - Now using constructor initializer list to initialize properties:
+- **Link GitHub**: [Proyek Quizzler](https://github.com/londonappbrewery/quizzler-flutter)
+- `FlatButton` digantikan dengan `TextButton`. Lihat dokumentasi: [Tombol Flutter](https://docs.flutter.dev/release/breaking-changes/buttons)
+- Perubahan di `question.dart`:
+  - Sekarang menggunakan constructor initializer list untuk menginisialisasi properti:
 
 ```dart
-// Before:
+// Sebelum:
 class Question {
   String questionText;
   bool questionAnswer;
@@ -42,7 +47,7 @@ class Question {
   }
 }
 
-// After:
+// Sesudah:
 class Question {
   String questionText;
   bool questionAnswer;
@@ -55,62 +60,66 @@ class Question {
 
 ## Destini
 
-- `FlatButton` is replaced with `TextButton`. See documentation: [Flutter Buttons](https://docs.flutter.dev/release/breaking-changes/buttons)
-- `story.dart` requires the `required` keyword for each parameter.
+- **Link GitHub**: [Proyek Destini](https://github.com/londonappbrewery/destini-challenge-starting)
+- `FlatButton` digantikan dengan `TextButton`. Lihat dokumentasi: [Tombol Flutter](https://docs.flutter.dev/release/breaking-changes/buttons)
+- `story.dart` membutuhkan kata kunci `required` untuk setiap parameter.
 
-## BMI Calculator
+## Kalkulator BMI
 
-- Parameters require the `required` keyword (without `@` at the beginning).
-- In `calculator_brain.dart`, add `late` to `double _bmi` variable:
+- **Link GitHub**: [Proyek Kalkulator BMI](https://github.com/londonappbrewery/bmi-calculator-flutter)
+- Parameter membutuhkan kata kunci `required` (tanpa `@` di awal).
+- Di `calculator_brain.dart`, tambahkan `late` ke variabel `double _bmi`:
   ```dart
   late double _bmi;
   ```
-- In `input_page.dart`, add `?` to `Gender selectedGender` variable:
+- Di `input_page.dart`, tambahkan `?` ke variabel `Gender selectedGender`:
   ```dart
   Gender? selectedGender;
   ```
-- Fix parameters in `round_icon_button.dart`, `reusable_card.dart`, `icon_content.dart`, and `bottom_button.dart`.
-- Add `VoidCallback` to `onPressed` variable in `round_icon_button.dart`, `reusable_card.dart`, and `bottom_button.dart`:
+- Perbaiki parameter di `round_icon_button.dart`, `reusable_card.dart`, `icon_content.dart`, dan `bottom_button.dart`.
+- Tambahkan `VoidCallback` ke variabel `onPressed` di `round_icon_button.dart`, `reusable_card.dart`, dan `bottom_button.dart`:
   ```dart
   final VoidCallback onPressed;
   ```
 
 ## Clima Weather
 
-- In `networking.dart`, change URL usage:
+- **Link GitHub**: [Proyek Clima](https://github.com/londonappbrewery/Clima-Flutter)
+- Di `networking.dart`, ubah penggunaan URL:
   ```dart
   http.Response response = await http.get(Uri.parse(url));
   ```
-- In `location.dart`, add `?` to `latitude` and `longitude` variables:
+- Di `location.dart`, tambahkan `?` ke variabel `latitude` dan `longitude`:
   ```dart
   double? latitude;
   double? longitude;
   ```
-- Update `getCurrentLocation()` function:
+- Perbarui fungsi `getCurrentLocation()`:
   ```dart
   Position position = await Geolocator.getCurrentPosition(desiredAccuracy: LocationAccuracy.low);
   ```
-- In `location_screen.dart`:
-  - Add `?` to all variables.
-  - Add `!` to ensure non-null values where necessary.
-  - Fix button writing errors.
-- If location access errors occur:
-  - Change API in `services/weather.dart`. Generate new API keys at [OpenWeatherMap](https://home.openweathermap.org/api_keys)
-  - Check location permissions in `android/app/main/AndroidManifest.xml`:
+- Di `location_screen.dart`:
+  - Tambahkan `?` ke semua variabel.
+  - Tambahkan `!` untuk memastikan nilai tidak null jika diperlukan.
+  - Perbaiki kesalahan penulisan tombol.
+- Jika terjadi kesalahan akses lokasi:
+  - Ubah API di `services/weather.dart`. Buat kunci API baru di [OpenWeatherMap](https://home.openweathermap.org/api_keys)
+  - Periksa izin lokasi di `android/app/main/AndroidManifest.xml`:
     ```xml
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     ```
-  - If missing, add these lines, then run `flutter clean` and `flutter build apk`.
+  - Jika tidak ada, tambahkan baris ini, lalu jalankan `flutter clean` dan `flutter build apk`.
 
 ## Bitcoin Ticker
 
-- Use `Uri.parse()` to create Uri object from `requestURL`:
+- **Link GitHub**: [Proyek Bitcoin Ticker](https://github.com/londonappbrewery/bitcoin-ticker-flutter)
+- Gunakan `Uri.parse()` untuk membuat objek Uri dari `requestURL`:
   ```dart
   http.Response response = await http.get(Uri.parse(requestURL));
   ```
-- In `price_screen.dart`:
-  - Update `DropdownButton` `onChanged`:
+- Di `price_screen.dart`:
+  - Perbarui `DropdownButton` `onChanged`:
     ```dart
     onChanged: (value) {
       setState(() {
@@ -119,22 +128,23 @@ class Question {
       });
     },
     ```
-  - Update `CryptoCard` value:
+  - Perbarui nilai `CryptoCard`:
     ```dart
     value: isWaiting ? '?' : (coinValues[crypto] ?? 'N/A')
     ```
-  - Add `required` to `CryptoCard` parameters.
+  - Tambahkan `required` ke parameter `CryptoCard`.
 
-## Todo List
+## Daftar Tugas
 
-- Add `required` to `TaskTile` function in `task_tile.dart`.
-- Update callback variables in `task_tile.dart`:
+- **Link GitHub**: [Proyek Todoey](https://github.com/londonappbrewery/todoey-flutter)
+- Tambahkan `required` ke fungsi `TaskTile` di `task_tile.dart`.
+- Perbarui variabel callback di `task_tile.dart`:
   ```dart
   final VoidCallback? longPressCallback;
   final ValueChanged<bool?> checkboxCallback;
   ```
-- Use `TextButton` in `add_task_screen.dart`.
-- Initialize `newTaskTitle` with an empty string:
+- Gunakan `TextButton` di `add_task_screen.dart`.
+- Inisialisasi `newTaskTitle` dengan string kosong:
   ```dart
   String newTaskTitle = '';
   ```
