@@ -1,5 +1,16 @@
 # Mobile Development Flutter
 
+**minimum requirement** 
+
+CPU : intel i5 gen 8 or ryzen 5 3600 series
+Ram : 8gb 
+
+**Recommended requirement** 
+
+CPU : intel i5 gen 12 or ryzen 5 5000 series 
+
+Ram : 16gb
+
 ## Daftar Isi
 1. **Project Link** : [i_am_rich](https://github.com/KKSBY/i_am_rich) 
 2. **Project Link** : [Name Card](https://github.com/KKSBY/NameCard)
