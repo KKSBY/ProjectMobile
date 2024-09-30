@@ -103,7 +103,7 @@ class Question {
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     ```
-  - Jika tidak ada, tambahkan baris ini, lalu jalankan `flutter clean` dan `flutter build apk`.
+  - Jika tidak ada, tambahkan baris diatas, lalu jalankan `flutter clean` dan `flutter build apk`.
 
 ## Bitcoin Ticker
 - dI `coin_data.dart` Buat API baru di [CoinAPI](https://customerportal.coinapi.io/apikeys)
