@@ -3,6 +3,7 @@
 **minimum requirement** 
 
 CPU : intel i5 gen 8 or ryzen 5 3600 series
+
 Ram : 8gb 
 
 **Recommended requirement** 
