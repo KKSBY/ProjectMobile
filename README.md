@@ -106,7 +106,7 @@ class Question {
   - Jika tidak ada, tambahkan baris ini, lalu jalankan `flutter clean` dan `flutter build apk`.
 
 ## Bitcoin Ticker
-
+- dI `coin_data.dart` Buat API baru di [CoinAPI](https://customerportal.coinapi.io/apikeys)
 - Di `coin_data.dart` gunakan `Uri.parse()` untuk membuat objek Uri dari `requestURL`:
   ```dart
   http.Response response = await http.get(Uri.parse(requestURL));
