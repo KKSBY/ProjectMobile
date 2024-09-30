@@ -4,7 +4,7 @@
 1. **Project Link** : [i_am_rich](https://github.com/KKSBY/i_am_rich) 
 2. **Project Link** : [Name Card](https://github.com/KKSBY/NameCard)
 3. **Notes** : [Dice](#dice) || **Project Link** : [Dice](https://github.com/KKSBY/Dice)
-4. **Notes** : [Magic8Ball] || **Project Link** : [Magic8Ball](https://github.com/KKSBY/Magic8Ball)
+4. **Project Link** : [Magic8Ball](https://github.com/KKSBY/Magic8Ball)
 5. **Notes** : [Xylophone](#xylophone) || **Project Link** : [Xylophone](https://github.com/KKSBY/xylophone)
 6. **Notes** : [Quizzler](#quizzler) ||  **Project Link** : [Quizzler](https://github.com/KKSBY/Quizzler)
 7. **Notes** : [Destini](#destini) ||  **Project Link** : [Destini](https://github.com/KKSBY/destini)
